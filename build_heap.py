@@ -21,7 +21,7 @@ def heap(data, a, i, swaps):
 def build_heap (data):
     swaps = []
     a = len(data)
-    for i in range(a// 2-1, -1, -1):
+    for i in range(a//2-1, -1, -1):
         heap(data, a, i, swaps)
     return swaps
 
@@ -30,7 +30,7 @@ def main():
     
     if "I" in text:
         n = int(input())
-        data = list(map(int, input.split()))
+        data = list(map(int, input().split()))
 
     elif "F" in text:
         filee = input()
