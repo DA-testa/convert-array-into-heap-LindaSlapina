@@ -19,7 +19,7 @@ def heap(data, a, i, swaps):
 def build_heap (data):
     swaps = []
     a = len(data)
-    for i in range(a // 2 -1, -1, -1):
+    for i in range(n // 2 -1, -1, -1):
         heap(data, a, i, swaps)
     return swaps
 
@@ -35,8 +35,6 @@ def main():
         with open("tests/" + filee, 'r') as faili:
             n = int(faili.readline())
             data = list(map(int, faili.readline().split()))
-
-
     assert len(data) == n
 
     swaps = build_heap(data)
