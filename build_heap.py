@@ -1,7 +1,8 @@
 # python3
-from math import floor
 
 # Linda Slapiņa 221RDB214
+from math import floor
+
 
 def heap(data, a, i, swaps):
     gar = i*2+1
