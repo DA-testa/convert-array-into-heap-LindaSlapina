@@ -34,7 +34,7 @@ def main():
 
     elif "F" in text:
         filee = input()
-        with open("tests/" + filee + 'r') as faili:
+        with open("tests/" + filee, 'r') as faili:
             n = int(faili.readline())
             data = list(map(int, faili.readline().split()))
     else:
