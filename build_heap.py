@@ -1,12 +1,9 @@
 # python3
-
 # Linda Slapiņa 221RDB214
-from math import floor
-
 
 def heap(data, a, i, swaps):
-    gar = i*2+1
-    gar2 = i*2+2
+    gar =  2 * i + 1
+    gar2 = 2 * i + 2
 
     rez = i
     if gar < a and data[gar] < data[rez]:
@@ -29,11 +26,11 @@ def build_heap (data):
 def main():
     text = input()
     
-    if "I" in text:
+    if 'I' in text:
         n = int(input())
         data = list(map(int, input().split()))
 
-    if "F" in text:
+    if 'F' in text:
         filee = input()
         with open("tests/" + filee, 'r') as faili:
             n = int(faili.readline())
